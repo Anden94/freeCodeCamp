@@ -1,0 +1,247 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/*Header______start*/
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  overflow: hidden;
+  background-color: darkgray;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+} 
+
+.logo{
+  font-size: 50px;
+  margin-right: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.menu{
+  list-style: none;
+  background-color: darkgray;
+}
+
+.menu ul{
+  position: absolute;
+  padding: 10px 100px 10px 10px;
+}
+
+.menu li{
+  display: inline-block; 
+  
+}
+
+.menu li a{
+  transition: all 0.3s ease 0s;
+  display:block;  
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  padding: 0 20px;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;  
+}
+
+.menu li a:hover{  
+  background: lightgrey;
+}
+
+
+/*Header______end*/
+
+p{
+  color: grey;
+}
+
+.video{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+#feature{
+  margin: 0 200px;
+}
+
+main {
+  margin-top: 200px;
+  
+  
+}
+
+.grid{
+  display: flex;
+}
+
+.icon{
+  list-style: none;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 20vw;
+}
+
+.icon li{
+  font-size: 4rem;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+/*____Form_____*/
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+#form-container {
+  width: 40%;
+  border-radius: 5px;
+  margin-top: 20px;  
+  padding: 30px;
+  margin: auto;
+  display: table;
+  border:solid black ;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header{   
+    padding: 10px 10%;   
+  } 
+  
+  .logo{
+    font-size: 25px;    
+  } 
+  
+  .menu li a{    
+    line-height: 50px;    
+    font-size: 14px;    
+  }  
+  
+
+  .video{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+  }
+
+  #feature{
+    margin: 40px;
+  }
+  
+  main {
+    margin-top: 200px;    
+  } 
+  
+  .icon{    
+    height: 125px;
+    width: 40vw;
+  }
+  
+  .icon li{
+    font-size: 4rem;
+  }
+  
+  .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+  }
+
+  #form-container {
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 20px;  
+    padding: 30px;
+    margin: auto;
+    display: table;
+    border:solid black ;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+
