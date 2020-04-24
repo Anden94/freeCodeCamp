@@ -188,6 +188,7 @@ input[type=submit]:hover {
   .logo{
     font-size: 60px;   
     padding: 0;
+    margin-left: 10px;
   }  
 
   
@@ -215,6 +216,7 @@ input[type=submit]:hover {
   .burger{
     display: block;
     cursor: pointer;
+    margin-left: 20px;
   }
 
   .grid{
