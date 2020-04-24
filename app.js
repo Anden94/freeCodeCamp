@@ -14,4 +14,6 @@ const navSlide = () =>{
     });
 }
 
+window.addEventListener("hashchange", function() { scrollBy(0, -200) });
+
 navSlide();
