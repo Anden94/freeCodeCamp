@@ -8,33 +8,38 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href ="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header id="header">   
         <label class="logo">MoreFlo</label>     
-        <nav >        
-        <ul class ="menu">
-            <li><a class="nav-link" href="#feature">Features</a></li>
-             <li><a class="nav-link" href="#">News</a></li>
-             <li><a class="nav-link" href="#form-container">Contact</a></li>
-             <li><a class="nav-link" href="#">About</a></li>
-         </ul>
+        <nav>                     
+            <ul class ="menu">
+                <li><a  href="#feature">Varor</a></li>
+                <li><a  href="#video">Video</a></li>
+                <li><a  href="#form-container">Kontakt</a></li>                
+            </ul>         
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>    
+            </label>        
         </nav>
     </header>
     <main>
         <div id="feature">
             <div class="grid">
-                <div class="icon">  
-                                      
+                <div class="icon">                                        
                     <li>                        
                         <i class="fas fa-cash-register"></i>                            
                     </li>                   
                 </div>
                 <div class="desc">
                     <h1>Premium Materials</h1>
-                    <p>Our trombones use the shiniest brass which is sourced locally.
-                        This will increase the longevity of your purchase.
+                    <p>Våra kassa apparater är i topp kvalitet och testade för att vara i toppform för våra kunder. 
+                        Kvalitet-garanti medfökjer för varje köpt/hyrd kassa.
                     </p>
                 </div>
             </div>
@@ -46,8 +51,8 @@
                 </div>
                 <div class="desc">
                     <h1>Fast shipping</h1>
-                    <p>Our trombones use the shiniest brass which is sourced locally.
-                        This will increase the longevity of your purchase.
+                    <p>Vi sammarbetar med utvalda och pålitliga postombud som 
+                        försäkrar våra kunder att deras varor kommer fram med största försiktighet och vård.
                     </p>
                 </div>
             </div>
@@ -59,19 +64,20 @@
                 </div>
                 <div class="desc">
                     <h1>Quality assurance</h1>
-                    <p>Our trombones use the shiniest brass which is sourced locally.
-                        This will increase the longevity of your purchase.
+                    <p>Vår kvalitet-garanti gäller under bestämd period som har diskutterats och bestämts med respektive säljare. 
+                        
                     </p>
                 </div>
             </div>
-            <div class="video">
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-                    </iframe>
-            </div>
-        </div>
+            
+            <div id="video">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pEPBl0nSbJw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
-        
+            </div>
+            
+        </div>
 
         <div id="form-container">
             <form action="action_page.php">
@@ -95,6 +101,8 @@
             </form>
           </div>
     </main>
+
+    <script src ="app.js"></script>
   
 </body>
 </html>
