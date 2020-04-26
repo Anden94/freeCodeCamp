@@ -1,19 +1,11 @@
-const navSlide = () =>{
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.menu');
-    const navLinks = document.querySelectorAll('.menu li');
-
-
-    burger.addEventListener('click', ()=>{
-        nav.classList.toggle('nav-active');
-    });
-
-    navLinks.forEach((link, index)=>{
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 2}s`;
-
-    });
+function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	
+	document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
+
+//fixa bugg i menyn när man klickar
 window.addEventListener("hashchange", function() { scrollBy(0, -200) });
 
-navSlide();

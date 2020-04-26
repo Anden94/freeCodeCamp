@@ -1,18 +1,13 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  
-  
+  padding: 0;  
 }
 
 
 /*Header______start*/
 
-
-
-header{
-  
+header{  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +27,7 @@ header{
 }
 
 nav{
-  display: flex;
+  
   margin: 0 5% 0 0;  
 }
 
@@ -63,19 +58,8 @@ nav{
   font-weight: lighter;  
 }
 
-.burger{
-  display: none;
-}
-
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 5px;
-}
-.menu li a:hover{  
-  background: lightgrey;
-  transition: .5s;
+.menu li a:hover{
+  background-color: lightgray;
 }
 
 
@@ -99,13 +83,15 @@ p{
   display: flex;  
   justify-content: center;
   align-items: center;  
-  width: 20vw;
+  width: 50px;
   font-size: 50px;
+  margin: 0 0 0 20%;
 }
 .desc{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 10% 0 40px;
 
 }
 
@@ -113,11 +99,6 @@ p{
   text-align: center;
   margin-bottom: 70px;
 }
-
-
-
-
-
 
 /*____Form_____*/
 
@@ -178,59 +159,101 @@ input[type=submit]:hover {
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 768px) {
-  body{
-    overflow-x: hidden; /**Tar bort scroll-bar när vi gömmer bort burger-menyn***/
-  }
+  
   header{   
     padding: 40px 10%;   
+    justify-content: center;
   } 
+
+  
   
   .logo{
     font-size: 60px;   
     padding: 0;
-    margin-left: 10px;
+    
   }  
 
-  
-
-  .menu{    
-    position: absolute;    
-    background-color: darkgray;
-    right: 0px;    
-    height: 80vh;
-    width: 25%;
-    top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    
-  }
-
-  .menu li{
-    opacity:0;
-  }
-
-  .burger{
-    display: block;
+  #menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;
-    margin-left: 20px;
+  }
+
+  
+  .bar{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1{
+    transform: translateY(-4px);
+  }
+  #bar3{
+    transform: translateY(4px);
+  }
+  
+  .menu li a:hover{
+    font-weight: bold;
+  }
+  
+  .menu{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    background-color: grey;
+    align-items: flex-start;
+    display: none;
+  }
+  .menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle,grey,grey);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  #menu-bar{
+    z-index: 2;	
+  }
+  .change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%,-30%);
+  }
+  .change .bar{
+    background-color: white;
+  }
+  .change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  .change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+  }
+  .change #bar2{
+    opacity: 0;
+  }
+  .change, .menu li{
+    display: flex;
+    flex-direction: column;   
   }
 
   .grid{
     margin: 40px 0;    
-  }
-  
-  #video{
-    
-  }
+  }  
 
   .video{
     width: 100%;
-  height: 100%;
-  
+    height: 100%;  
   }
   
 
@@ -241,9 +264,7 @@ input[type=submit]:hover {
   
   main {
     margin-top: 200px;    
-  } 
-  
-  
+  }  
   
   .icon li{
     font-size: 2rem;
@@ -269,26 +290,4 @@ input[type=submit]:hover {
     border-width: 1px;
     margin-bottom: 40px;
   }
-
-  .nav-active{
-    transform: translate(0%);
-
-  }
-
-  @keyframes navLinkFade{
-    from{
-      opacity:0;
-      transform: translateX(50px);
-
-    }
-    to{
-      opacity: 1;
-      transform: translateX(8px);
-      }
-  }
-
-
 }
-
-
-
